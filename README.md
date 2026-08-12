@@ -1,3 +1,20 @@
+## 내가 맡은 부분 — 신동민
+
+**기간** 2025.09.26 – 10.01 · **팀** 4인 · **내 커밋** 52건
+
+| 구현 | 내용 |
+| --- | --- |
+| **Frustum Culling** | 절두체 구현. SIMD 연동을 위해 `Vector4`로 확장 |
+| **Occlusion Culling** | BVH + 제한적 쿼리 + 히스토리를 결합한 하이브리드 방식. NDC Z 대신 **뷰포트 Z를 사용해 선형화**하고, 초기 그리드 해상도를 절반으로 낮춰 정확도를 개선. 두 차례 롤백 후 재구현 |
+| **액터·컴포넌트** | 액터/액터컴포넌트 초안, StaticMeshComponent |
+| **ImGui 디테일 패널** | 컴포넌트 추가·선택·제거, 루트 컴포넌트 토글, 컴포넌트 넘버링, 한글 패치 |
+
+**주요 파일** `TL2/Occlusion.cpp/h` · `TL2/Frustum.cpp` · `TL2/BVHierachy.h` · `TL2/World.cpp`
+
+→ **[내 커밋 52건 보기](https://github.com/TeshShin/Krafton_TechLab_Week05/commits?author=TeshShin)** · [14주 전체 정리](https://github.com/TeshShin/Krafton-TechLab-Roles)
+
+---
+
 # 📘 KRAFTON TechLab Week05 – Unreal Engine Style 3D Editor & Rendering System
 
 ## 프로젝트 개요 ✨
